@@ -27,7 +27,7 @@ function handleQuizSelectionChange(dropdown: HTMLSelectElement, selectedQuiz: HT
     dropdown.addEventListener("change", () => {
         const selectedText = dropdown.options[dropdown.selectedIndex].text;
         const selectedValue: string = dropdown.options[dropdown.selectedIndex].value;
-        selectedQuiz.textContent = `Du erstellst eine Frage zu Quiz \"${selectedText}\"`;
+        selectedQuiz.textContent = `Du erstellst eine Frage zu Quiz "${selectedText}"`;
 
         const dataUploadDiv = document.getElementById("dependentData") as HTMLDivElement;
 
