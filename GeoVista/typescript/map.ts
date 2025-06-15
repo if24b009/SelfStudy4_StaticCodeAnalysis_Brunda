@@ -1,1 +1,1 @@
-declare var L: any;
+declare let L: any;
