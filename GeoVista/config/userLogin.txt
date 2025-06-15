@@ -1,0 +1,3 @@
+admin (admin.admin@admin.com): AdminAdmin1!
+maxmustermann (max.mustermann@gmx.com): Passwort123!!!
+annademo (anna.demo@gmx.com): Passwort456!!!
