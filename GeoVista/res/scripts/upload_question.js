@@ -26,7 +26,7 @@ function handleQuizSelectionChange(dropdown, selectedQuiz) {
         const selectedText = dropdown.options[dropdown.selectedIndex].text;
         const selectedValue = dropdown.options[dropdown.selectedIndex].value;
         selectedQuiz.textContent = `Du erstellst eine Frage zu Quiz \"${selectedText}\"`;
-        let dataUploadDiv = document.getElementById("dependentData");
+        const dataUploadDiv = document.getElementById("dependentData");
         if (Number(selectedValue) === 1 || Number(selectedValue) === 4) {
             dataUploadDiv.innerHTML = '<label for="countryCode" class="form-label fw-semibold">Ländercode ISO_A3<span class="text-primary">*</span></label> <input type="text" class="form-control" id="countryCode" name="countryCode">';
         }
