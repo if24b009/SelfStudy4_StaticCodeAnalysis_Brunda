@@ -1,1 +1,1 @@
-declare let L: any;
+declare let L: HTMLElement;
