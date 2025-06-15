@@ -114,16 +114,16 @@ function evaluateQuestion(checkQuestionButton, answerSection, questions) {
             if (radio.checked) {
                 if (radio.getAttribute("data-correct") === "true") {
                     answeredCorrectly = true;
-                    label === null || label === void 0 ? void 0 : label.classList.add("bg-success");
+                    label?.classList.add("bg-success");
                     countCorrectAnswers++;
                 }
                 else {
-                    label === null || label === void 0 ? void 0 : label.classList.add("bg-danger");
+                    label?.classList.add("bg-danger");
                 }
             }
             //Highlight correct answer
             if (radio.getAttribute("data-correct") === "true" && !answeredCorrectly)
-                label === null || label === void 0 ? void 0 : label.classList.add("bg-success");
+                label?.classList.add("bg-success");
         });
         if (!document.getElementById("evaluationText")) {
             const evaluationText = document.createElement("div");
